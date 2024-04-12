@@ -34,7 +34,7 @@
 %%
 %%
 %% The first command in your LaTeX source must be the \documentclass command.
-\documentclass[sigconf,authordraft,anonymous]{acmart}
+\documentclass[manuscript,acmsmall,anonymous,review,screen,nonacm=true, authorversion=true]{acmart}
 %% NOTE that a single column version may required for 
 %% submission and peer review. This can be done by changing
 %% the \doucmentclass[...]{acmart} in this template to 
@@ -328,10 +328,11 @@ In this section, we will introduce how we collect the necessary data.
 
 
 \section{Related Work}
-
+\cite{knuth:texbook}
 \section{Conclusion}
 
-
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{main.bib}
 
 \end{document}
 \endinput
